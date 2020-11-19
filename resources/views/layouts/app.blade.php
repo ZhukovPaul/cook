@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/all.css" />
 
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 @include('inc.header')
 
 @if(Request::is('/'))

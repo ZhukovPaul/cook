@@ -1,5 +1,5 @@
  
-<footer class=" containerpt-4 my-md-5 pt-md-5 border-top">
+<footer class="footer mt-auto py-3 container   border-top">
     <div class="row">
       <div class="col-12 col-md">
         
