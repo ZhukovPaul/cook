@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\FeedbackController as FeedbackController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +20,12 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 })->name("about");
+
+Route::get('/feedback',function(){
+    return view('feedback');
+})->name('feedback');
+ 
+Route::post('/feedback/submit', [ FeedbackController::class, 'submit'])->name('contact-form');
 
 Route::get('/contact',function(){
     return view('contact');

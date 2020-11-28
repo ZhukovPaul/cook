@@ -1,7 +1,7 @@
-body{
-      
- }
  main,
  footer{
      background-color: #fff;
  }
+.top-block{
+    background: beige !important;
+}

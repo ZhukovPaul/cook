@@ -5,6 +5,7 @@
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="{{route('homepage')}}">Главная</a>
     <a class="p-2 text-dark" href="{{route('contact')}}">Контакты</a>
+    <a class="p-2 text-dark" href="{{route('feedback')}}">Обратная связь</a>
     <a class="p-2 text-dark" href="{{route('about')}}">О нас</a>
   </nav>
   <a class="btn btn-outline-primary" href="#">Войти</a>

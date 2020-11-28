@@ -7,7 +7,7 @@
 
 
 @section('content')
-<h1>{{$title}}</h1>
+<h1 class="mb-5 text-center">{{$title}}</h1>
 
 <div class="row mb-2">
     <div class="col-md-6">
