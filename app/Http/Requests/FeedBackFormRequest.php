@@ -32,7 +32,7 @@ class FeedBackFormRequest extends FormRequest
     public function messages()
     {
         return [
-            "name.required" =>"Поле имя не заполнено ",
+            "name.required" =>"Поле Имя не заполнено ",
             "email.required" =>"Поле Email не заполнено ",
             "sendCheck.required" =>"Вы не подтвердили согласие на обработку персональных данных"
         ];

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FeedbackController as FeedbackController;
+use App\Http\Controllers\NewsController as NewsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,11 @@ use App\Http\Controllers\FeedbackController as FeedbackController;
 */
 
 Route::get('/', function () {
-    return view('home',['title'=>'Научитесь готовить с нами!']);
+ 
+    return view('home',[
+        'title'     =>  'Научитесь готовить с нами!',
+        'articles'  =>  App\Models\Article::latest('created_at')->take(2)->get()
+        ]);
 })->name("homepage");
 
 Route::get('/about', function () {
@@ -30,3 +35,7 @@ Route::post('/feedback/submit', [ FeedbackController::class, 'submit'])->name('c
 Route::get('/contact',function(){
     return view('contact');
 })->name('contact');
+
+
+
+Route::get('/news/{news}',  [NewsController::class,'show']);

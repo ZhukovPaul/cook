@@ -1,10 +1,12 @@
 @extends('layouts.app') 
 
 @section('title', 'Обратная связь')
-@section('sitename', 'COOK TEACHER')
-
+ 
  
 @section('content')
+ 
+
+
 <h1 class="text-center">Обратная связь</h1>
 <div class="row my-5">
 <div class="col-4 offset-lg-4">
@@ -18,7 +20,9 @@
     </div>
 @endif
 </div>
+
 <div class="col-4 offset-lg-4">
+
 <form action="{{route('contact-form')}}" method="POST">
 @csrf
 
@@ -39,4 +43,5 @@
 </form>
 </div>
 </div>
+
 @endsection
